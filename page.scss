@@ -12,6 +12,88 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+nav {
+  @include responsive(800px) {
+    height: initial;
+    width: 100%;
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  position: fixed;
+  width: 300px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  background: white;
+
+  a {
+    display: block;
+    &:hover {
+      color: #ff7d7d;
+    }
+    &.isActive {
+      color: #ff7d7d;
+      font-weight: 500;
+    }
+  }
+
+  header {
+    @include responsive(800px) {
+      display: flex;
+      margin-left: 20px;
+    }
+    button {
+      display: none;
+      margin-right: 20px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      svg {
+        font-size: 1.5rem;
+      }
+      @include responsive(800px) {
+        display: block;
+      }
+    }
+    a {
+      @include responsive(800px) {
+        margin: 20px 0;
+      }
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 30px 0;
+    }
+  }
+
+  > ul {
+    padding-bottom: 20px;
+  }
+  ul {
+    margin: 0 20px;
+    @include responsive(800px) {
+      &.isActive {
+        display: none;
+      }
+    }
+    li {
+      line-height: 1.4;
+      a {
+        margin-bottom: 7px;
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
 main {
   margin-left: 300px;
   @include responsive(800px) {
