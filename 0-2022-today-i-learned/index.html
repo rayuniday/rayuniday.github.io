@@ -1,0 +1,635 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>RAYUN's TIL(Today I Learned)</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content="개발자 라윤의 TIL(Today I Learned)입니다."><meta data-n-head="ssr" name="format-detection" content="telephone=no"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/planet.png"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"><link rel="preload" href="/_nuxt/0d858e3.js" as="script"><link rel="preload" href="/_nuxt/960bec5.js" as="script"><link rel="preload" href="/_nuxt/b5af4e1.js" as="script"><link rel="preload" href="/_nuxt/0bac3da.js" as="script"><link rel="preload" href="/_nuxt/58ef95b.js" as="script"><style data-vue-ssr-id="fa7ff0ca:0 0e80fc16:0 be47691e:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}pre code.hljs[data-v-29962fe6]{display:block;overflow-x:auto;padding:1em}code.hljs[data-v-29962fe6]{padding:3px 5px}.hljs[data-v-29962fe6]{color:#abb2bf;background:#282c34}.hljs-comment[data-v-29962fe6],.hljs-quote[data-v-29962fe6]{color:#5c6370;font-style:italic}.hljs-doctag[data-v-29962fe6],.hljs-formula[data-v-29962fe6],.hljs-keyword[data-v-29962fe6]{color:#c678dd}.hljs-deletion[data-v-29962fe6],.hljs-name[data-v-29962fe6],.hljs-section[data-v-29962fe6],.hljs-selector-tag[data-v-29962fe6],.hljs-subst[data-v-29962fe6]{color:#e06c75}.hljs-literal[data-v-29962fe6]{color:#56b6c2}.hljs-addition[data-v-29962fe6],.hljs-attribute[data-v-29962fe6],.hljs-meta .hljs-string[data-v-29962fe6],.hljs-regexp[data-v-29962fe6],.hljs-string[data-v-29962fe6]{color:#98c379}.hljs-attr[data-v-29962fe6],.hljs-number[data-v-29962fe6],.hljs-selector-attr[data-v-29962fe6],.hljs-selector-class[data-v-29962fe6],.hljs-selector-pseudo[data-v-29962fe6],.hljs-template-variable[data-v-29962fe6],.hljs-type[data-v-29962fe6],.hljs-variable[data-v-29962fe6]{color:#d19a66}.hljs-bullet[data-v-29962fe6],.hljs-link[data-v-29962fe6],.hljs-meta[data-v-29962fe6],.hljs-selector-id[data-v-29962fe6],.hljs-symbol[data-v-29962fe6],.hljs-title[data-v-29962fe6]{color:#61aeee}.hljs-built_in[data-v-29962fe6],.hljs-class .hljs-title[data-v-29962fe6],.hljs-title.class_[data-v-29962fe6]{color:#e6c07b}.hljs-emphasis[data-v-29962fe6]{font-style:italic}.hljs-strong[data-v-29962fe6]{font-weight:700}.hljs-link[data-v-29962fe6]{text-decoration:underline}footer[data-v-29962fe6]{margin-top:30px;border-top:1px solid rgba(0,0,0,.1);display:flex;height:60px;align-items:center}footer a[data-v-29962fe6]{color:#ff7d7d;display:block;width:50%;padding:10px}footer a[data-v-29962fe6]:last-child{text-align:right}*{box-sizing:border-box;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}body{margin:0}aside{position:fixed;top:0;border-right:1px solid rgba(0,0,0,.1);overflow-y:auto;height:100%;z-index:1;width:300px;background:#fff;color:#000333}@media screen and (max-width:800px){aside{position:inherit}}aside a{color:#000333;font-weight:400}aside a.isActive,aside a:hover{color:#ff7d7d}aside header{padding-top:30px}@media screen and (max-width:800px){aside header{top:0;display:flex;padding:0;height:60px;align-items:center;position:fixed;width:100%;background:#fff;border-bottom:1px solid rgba(0,0,0,.1);z-index:1}}aside header img{width:20px;cursor:pointer;margin-left:20px;margin-right:20px;display:none}@media screen and (max-width:800px){aside header img{display:block}}aside header a{display:block;text-align:center;font-size:1.3rem}aside nav{margin-top:20px;margin-bottom:20px;margin-right:20px}@media screen and (max-width:800px){aside nav{position:fixed;width:300px;border-right:1px solid rgba(0,0,0,.1);height:100%;top:60px;overflow-y:auto;margin:0;padding-right:20px;z-index:1;background:#fff}aside nav.isActive{display:none}}aside nav ul{list-style:none;padding:0;margin:0 0 0 20px}aside nav ul li{line-height:1.4}aside nav ul li a{display:block;margin-bottom:7px}aside nav ul p{font-weight:700;font-size:1.1rem;padding:0;margin:20px 0 8px}main{margin:0;padding-left:300px}@media screen and (max-width:800px){main{padding:60px 0 0}}main section{max-width:900px;margin:0 auto;padding:20px}main section h1{font-family:Gugi,cursive;font-size:5rem;border-bottom:17px solid #ff7d7d}</style><link rel="preload" href="/_nuxt/static/1649105225/0-2022-today-i-learned/state.js" as="script"><link rel="preload" href="/_nuxt/static/1649105225/0-2022-today-i-learned/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1649105225/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="post__container" data-v-29962fe6><aside data-v-29962fe6><header><img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy02IGgtNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTQgNmgxNk00IDEyaDE2TTQgMThoMTYiPjwvcGF0aD48L3N2Zz4="> <a href="/">RAYUN's TIL</a></header> <nav class="isActive"><ul><li><p>2022년 Today I Learned</p> <ul><li><a href="/0-2022-today-i-learned" aria-current="page" class="nuxt-link-exact-active nuxt-link-active isActive">
+              
+            </a> <ul></ul></li></ul></li><li><p>Project : 오늘 뭐 먹지?</p> <ul><li><a href="/1-project-220405-fridge-recipe">
+              220405 개발 1일차
+            </a> <!----></li></ul></li><li><p>Express</p> <ul><li><a href="/2-express-220401-setup">
+              환경 설정
+            </a> <!----></li><li><a href="/2-express-220402-server">
+              서버 구축
+            </a> <!----></li><li><a href="/2-express-220403-router">
+              라우터(Router)
+            </a> <!----></li><li><a href="/2-express-220404-mongo">
+              MongoDB와 연결
+            </a> <!----></li></ul></li><li><p>Music : Cover</p> <ul><li><a href="/7-music-cover-7-pop">
+              POP
+            </a> <!----></li><li><a href="/7-music-cover-8-ost">
+              OST
+            </a> <!----></li><li><a href="/7-music-cover-9-newage">
+              뉴에이지
+            </a> <!----></li></ul></li><li><p>Music : 클래식 피아노</p> <ul><li><a href="/8-music-classic-piano-beyer">
+              바이엘
+            </a> <!----></li><li><a href="/8-music-classic-piano-czerny">
+              체르니 100 (Op.139)
+            </a> <!----></li></ul></li><li><p>Music : 기타 연습</p> <ul><li><a href="/8-music-guitar">
+              1일차
+            </a> <!----></li></ul></li><li><p>Book</p> <ul><li><a href="/9-book-220401-twenty-ninth-birthday-decided">
+              스물아홉 생일, 1년 후 죽기로 결심했다
+            </a> <!----></li><li><a href="/9-book-220403-things-regret-now">
+              지금 저지르지 않으면 후회할 일들
+            </a> <!----></li><li><a href="/9-book-220404-things-knowing-regret">
+              후회할 줄 알면서 저지르는 일들
+            </a> <!----></li><li><a href="/9-book-220405">
+              생각이 너무 많은 서른 살에게
+            </a> <!----></li></ul></li><li><p>undefined</p> <ul><li><a href="/native-expo-cli">
+              
+            </a> <!----></li><li><a href="/nuxt-basic">
+              
+            </a> <!----></li><li><a href="/nuxt-content">
+              
+            </a> <!----></li><li><a href="/nuxt-sass">
+              
+            </a> <!----></li><li><a href="/react-basic">
+              
+            </a> <!----></li><li><a href="/scraping-request-bs4">
+              
+            </a> <!----></li><li><a href="/vue-220401-bottom-top">
+              
+            </a> <!----></li><li><a href="/vue-cli">
+              
+            </a> <!----></li></ul></li></ul></nav></aside> <main data-v-29962fe6><section data-v-29962fe6><h1 data-v-29962fe6></h1> <div class="nuxt-content" data-v-29962fe6 data-v-29962fe6><h3 id="1주차-44---410" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#1%EC%A3%BC%EC%B0%A8-44---410" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>1주차 (4/4 - 4/10)</h3>
+<h4 id="45" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#45" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4/5</h4>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Python으로 웹 스크래퍼 만들기
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>#2 BUILDING A JOB SCRAPPER</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>3:00 개발 - Scraping : Python으로 웹 스크래퍼 만들기
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 먹지? 냉장고 레시피
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>요리
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>테마별요리
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>다이어트식
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>다다미니의 초간단 인생맛 고단백 저탄수화물 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>더 쉽고 더 맛있게 고단백 저탄수화물 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>맛있게 살 빠지는 고단백 저탄수화물 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>고단백 저탄수화물 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>한 달 반 만에 9kg 감량 운동 없는 맛불리 다이어트</li>
+<li data-v-29962fe6 data-v-29962fe6>운동 없이 8kg 감량 저탄수화물 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>무나키친의 저탄고지 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>진주의 한 그릇 키토식</li>
+<li data-v-29962fe6 data-v-29962fe6>한 그릇 베스트 다이어트 레시피 100</li>
+<li data-v-29962fe6 data-v-29962fe6>한 그릇 밀프렙 다이어트 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>에어프라이어로 시작하는 건강 다이어트 요리</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>건강요리 _ 사찰음식 _ 분식 _ 전문가요리비법 _ 신세대스피드요리 _ 퓨전요리 _ 어린이요리 _ 연예인 _ 아침,점심,저녁 _ 한권이면OK _ 명절음식 _ 도시락,샌드위치 _ 이유식 _ 과일,초대요리 _ 채식,샐러드</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>와인/커피/음료
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>주스
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>올 어바웃 수제청</li>
+<li data-v-29962fe6 data-v-29962fe6>궁합이 맞는 과일 채소 주스 & 스무디</li>
+<li data-v-29962fe6 data-v-29962fe6>몸의 라인이 살아나는 주스 & 스무디</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>다도/차</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>요리일반 - 음식문화 _ 식탁예절 _ 요리일반</li>
+<li data-v-29962fe6 data-v-29962fe6>요리에세이 _ 계절요리 _ 재료별요리</li>
+<li data-v-29962fe6 data-v-29962fe6>생활요리 - 밥/죽 _ 국/찌개/탕 _ 반찬/밑반찬</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 입지? 기온별 옷차림</li>
+<li data-v-29962fe6 data-v-29962fe6>주식
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>주식 자동 거래 시스템 구축</li>
+<li data-v-29962fe6 data-v-29962fe6>주식 거래 시스템 구축</li>
+<li data-v-29962fe6 data-v-29962fe6>비트코인 자동매매</li>
+<li data-v-29962fe6 data-v-29962fe6>알고리즘 트레이딩</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>6:00 에이핏 1 - 10</li>
+<li data-v-29962fe6 data-v-29962fe6>9:00 혼자 율동공원 걷기</li>
+<li data-v-29962fe6 data-v-29962fe6>12:00 엄마랑 걷기 -> 63.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>21:00 Music
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>기타 3 - 4주차</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 체르니 & 초급 - 피아노, 기타, 보컬 2주차</li>
+</ul>
+</li>
+</ul>
+<h4 id="46" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#46" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4/6</h4>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>0:00 Book
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>생각이 너무 많은 서른 살에게</li>
+<li data-v-29962fe6 data-v-29962fe6>결국 당신은 이길 것이다</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>3:00 개발 - Server : 유튜브 클론코딩
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Python으로 웹 스크래퍼 만들기
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>#1 THEORY</li>
+<li data-v-29962fe6 data-v-29962fe6>#3 GET READY FOR DJANGO</li>
+<li data-v-29962fe6 data-v-29962fe6>#4 2020 BONUS CLASS</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>에어비앤비 클론코딩</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>6:00 에이핏 11 - 20</li>
+<li data-v-29962fe6 data-v-29962fe6>9:00 혼자 율동공원 걷기</li>
+<li data-v-29962fe6 data-v-29962fe6>12:00 엄마랑 걷기 -> 62.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>21:00 Music
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>기타 5 - 6주차</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 체르니 & 초급 - 피아노, 기타, 보컬 3주차</li>
+</ul>
+</li>
+</ul>
+<h4 id="47" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#47" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4/7</h4>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>0:00 Book 평생 돈운이 좋아지는 4주의 기적</li>
+<li data-v-29962fe6 data-v-29962fe6>3:00 개발 - Web - React
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>ReactJS로 영화 웹 서비스 만들기</li>
+<li data-v-29962fe6 data-v-29962fe6>클론코딩 영화 평점 웹 서비스</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>6:00 에이핏 21 - 30</li>
+<li data-v-29962fe6 data-v-29962fe6>9:00 혼자 율동공원 걷기</li>
+<li data-v-29962fe6 data-v-29962fe6>12:00 엄마랑 걷기 -> 61.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>21:00 Music
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>기타 7 - 8주차</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 체르니 & 초급 - 피아노, 기타, 보컬 4주차</li>
+</ul>
+</li>
+</ul>
+<h4 id="48" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#48" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4/8</h4>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>0:00 Book 나는 4시간만 일한다</li>
+<li data-v-29962fe6 data-v-29962fe6>3:00 개발 - React Native : 왕초보를 위한 React Native 101
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 먹지? 냉장고 레시피</li>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 입지? 기온별 옷차림</li>
+<li data-v-29962fe6 data-v-29962fe6>주식</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>6:00 에이핏 31 - 40</li>
+<li data-v-29962fe6 data-v-29962fe6>9:00 혼자 율동공원 걷기</li>
+<li data-v-29962fe6 data-v-29962fe6>12:00 엄마랑 걷기 -> 60.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>21:00 Music
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>기타 9 - 10주차</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 체르니 & 초급 - 피아노, 기타, 보컬 1 - 2주차</li>
+</ul>
+</li>
+</ul>
+<h4 id="49" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#49" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4/9</h4>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>3:00 개발 - 외주 : 크몽, 위시켓, 원티드 긱스, 숨고
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>무자본 창업 지침서</li>
+<li data-v-29962fe6 data-v-29962fe6>억대 연봉을 버는 프리랜서 개발자 브랜딩 로드맵</li>
+<li data-v-29962fe6 data-v-29962fe6>개인 앱으로 자동 수익 만들기</li>
+<li data-v-29962fe6 data-v-29962fe6>검색 시 상품 노출 기준 = 상품 설명글에 포함된 '키워드' 개수</li>
+<li data-v-29962fe6 data-v-29962fe6>메인 상품 노출 기준 = 체류 시간, 조회수 등</li>
+<li data-v-29962fe6 data-v-29962fe6>컨설팅 및 전자책 판매
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>전자책을 통해 안정적인 수익 창출</li>
+<li data-v-29962fe6 data-v-29962fe6>교육 과정에서 어려움을 겪어 의뢰로 넘어감</li>
+<li data-v-29962fe6 data-v-29962fe6>전자책을 통해 기존 상품들의 신뢰도 상승</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>6:00 에이핏 41 - 50</li>
+<li data-v-29962fe6 data-v-29962fe6>9:00 혼자 율동공원 걷기</li>
+<li data-v-29962fe6 data-v-29962fe6>12:00 엄마랑 걷기 -> 59.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>21:00 Music
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>기타 11 - 12주차</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 체르니 & 초급 - 피아노, 기타, 보컬 3 - 4주차</li>
+</ul>
+</li>
+</ul>
+<h4 id="410" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#410" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4/10</h4>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>오리고기 + 두부 파스타</li>
+<li data-v-29962fe6 data-v-29962fe6>영상 촬영</li>
+</ul>
+<h3 id="2주차-411---417" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#2%EC%A3%BC%EC%B0%A8-411---417" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>2주차 (4/11 - 4/17)</h3>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>54.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>구매
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>곰팡이 제거 & 방음 처리</li>
+<li data-v-29962fe6 data-v-29962fe6>쇼파, 빔 프로젝트 & 스크린, 귀멸의 칼날</li>
+<li data-v-29962fe6 data-v-29962fe6>음식물 처리기, 에어프라이어</li>
+<li data-v-29962fe6 data-v-29962fe6>맥북, 아이팟, 블루투스 스피커</li>
+<li data-v-29962fe6 data-v-29962fe6>운전면허증 따고 차 사기 : 맛집, 여행 시작할 수 있음! (맛집은 블로그, 여행은 인스타그램에 추가)</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Book
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>2억 빚을 진 내게 우주님이 가르쳐 준 운이 풀리는 말버릇</li>
+<li data-v-29962fe6 data-v-29962fe6>2억 빚을 진 내게 우주님이 가르쳐 준 운이 풀리는 말버릇 : 만화편</li>
+<li data-v-29962fe6 data-v-29962fe6>2억 빚을 진 내가 뒤늣게 알게 된 소~오름 돋는 우주의 법칙</li>
+<li data-v-29962fe6 data-v-29962fe6>우주님의 1분 스파르타</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Music with 유튜브
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>강의 : 기타 중급</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 & 영상 촬영
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>체르니 & 초급 - 피아노, 기타, 보컬 5 - 8주차</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>개발
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Server : Node.js 교과서</li>
+<li data-v-29962fe6 data-v-29962fe6>Web
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>React
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>React JS 마스터 클래스</li>
+<li data-v-29962fe6 data-v-29962fe6>리액트 프로그래밍 정석</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Vue : Vue.js 프로젝트 투입 일주일 전</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>React Native : React Native 마스터 클래스</li>
+<li data-v-29962fe6 data-v-29962fe6>Project
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 먹지? 냉장고 레시피
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>홍보는 유튜브 서비스 소개 영상 1개, 네이버 블로그 레시피 공유하는 걸로!
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>네이버 인플루언서로 시간당 10만원 수익</li>
+<li data-v-29962fe6 data-v-29962fe6>인플루언서 by 아나</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 입지? 기온별 옷차림
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>홍보는 유튜브 서비스 소개 영상 1개, 인스타그램 데일리룩 공유하는 걸로!</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>주식 : 유튜브로 서비스 소개 영상 1개, 이후 주식 관련해서 이 서비스 공유!
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>인프런 & 탈잉 : 파이썬 및 주식 시스템 개발 강의 오픈
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>혼자 공부하는 파이썬</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>강의 : 구성 계획, 어떤 톤앤매너, 어떤 방식으로 수강생들한테 전달할지
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>일단 TIL에 내용을 정리하고 해당 내용을 바탕으로 강의를 만든다</li>
+<li data-v-29962fe6 data-v-29962fe6>온라인 : 자막 작업은 Vrew 프로그램 사용해보기
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>무료 : 유튜브
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>주 시청자 층을 확인하고 콘텐츠를 만든다</li>
+<li data-v-29962fe6 data-v-29962fe6>자바스크립트
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>바닐라 JS로 크롬 앱 만들기</li>
+<li data-v-29962fe6 data-v-29962fe6>혼자 공부하는 자바스크립트</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>파이썬</li>
+<li data-v-29962fe6 data-v-29962fe6>코코아톡 클론코딩</li>
+<li data-v-29962fe6 data-v-29962fe6>CSS Layout 마스터 클래스</li>
+<li data-v-29962fe6 data-v-29962fe6>40 minutes Basic Sass</li>
+<li data-v-29962fe6 data-v-29962fe6>Gulp 90분 마스터하기</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>유료 : 인프런
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Typescript로 블록체인 만들기</li>
+<li data-v-29962fe6 data-v-29962fe6>타입스크립트 프로그래밍</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>오프라인 : 탈잉 - 온라인 강의들을 오프라인으로 만들기</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3주차-418---424" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#3%EC%A3%BC%EC%B0%A8-418---424" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>3주차 (4/18 - 4/24)</h3>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>49.9kg</li>
+<li data-v-29962fe6 data-v-29962fe6>관리
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>로아한의원 - 가슴 성형</li>
+<li data-v-29962fe6 data-v-29962fe6>보앙주 - 전신관리 with 엄마</li>
+<li data-v-29962fe6 data-v-29962fe6>온누리 스마일 안과 - 스마일 라식</li>
+<li data-v-29962fe6 data-v-29962fe6>이호재 치과의원 - 치아 교정</li>
+<li data-v-29962fe6 data-v-29962fe6>피부과 with 동생</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Book
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>운의 알고리즘</li>
+<li data-v-29962fe6 data-v-29962fe6>부의 추월차선</li>
+<li data-v-29962fe6 data-v-29962fe6>부의 추월차선 완결판 : 언스크립티드</li>
+<li data-v-29962fe6 data-v-29962fe6>생각하라! 그러면 부자가 되리라</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Music with 유튜브
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>강의 : 기타 고급</li>
+<li data-v-29962fe6 data-v-29962fe6>연습 & 영상 촬영
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>체르니 & 초급 - 피아노, 기타, 보컬 9 - 12주차</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>엘 다이어리 : 직접 작사, 작곡
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>도약아트 : 청음, 작곡</li>
+<li data-v-29962fe6 data-v-29962fe6>앨범 내기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>개발
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Server : 인스타그램 클론코딩</li>
+<li data-v-29962fe6 data-v-29962fe6>Web
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>React : 스무디 한 잔 마시며 끝내는 리액트 + TDD
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Next : NextJS 시작하기</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Vue : 커피 한 잔 마시며 끝내는 Vue.JS</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>React Native : 스무디 한 잔 마시며 끝내는 React Native</li>
+<li data-v-29962fe6 data-v-29962fe6>Project
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 먹지? 냉장고 레시피 : 맛집
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>생생정보</li>
+<li data-v-29962fe6 data-v-29962fe6>생방송투데이</li>
+<li data-v-29962fe6 data-v-29962fe6>토요일은 밥이 좋아</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>오늘 워 입지? 기온별 옷차림
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>사진기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>돈 버는 취미 사진</li>
+<li data-v-29962fe6 data-v-29962fe6>셀프 촬영 책 : 어느 멋진 날</li>
+<li data-v-29962fe6 data-v-29962fe6>모델 사진 촬영 1000개의 모델 포즈 연출 기법</li>
+<li data-v-29962fe6 data-v-29962fe6>여행 사진 잘 찍는 법
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>미술 학원 with 엄마
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>도약아트
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>캘리그라피</li>
+<li data-v-29962fe6 data-v-29962fe6>펜드로잉</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>주식 : 경제/경영 - 재테크/금융 - 주식/증권</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4주차-425---51" data-v-29962fe6 data-v-29962fe6><a aria-hidden="true" href="#4%EC%A3%BC%EC%B0%A8-425---51" tabindex="-1" data-v-29962fe6 data-v-29962fe6><span class="icon icon-link" data-v-29962fe6 data-v-29962fe6></span></a>4주차 (4/25 - 5/1)</h3>
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>운동
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>복싱 with 엄마</li>
+<li data-v-29962fe6 data-v-29962fe6>볼링 with 애기</li>
+<li data-v-29962fe6 data-v-29962fe6>댄스조아 (유튜브, 틱톡) - 비기너, 전과목</li>
+<li data-v-29962fe6 data-v-29962fe6>필라테스 - 큐브, 포시즌 강사 자격증</li>
+<li data-v-29962fe6 data-v-29962fe6>한국당구아카데미 with 애기</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>머리 단발 후 올해 컬러로 염색</li>
+<li data-v-29962fe6 data-v-29962fe6>Book
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>멈추지 마, 다시 꿈부터 써봐</li>
+<li data-v-29962fe6 data-v-29962fe6>당신의 꿈은 무엇입니까</li>
+<li data-v-29962fe6 data-v-29962fe6>당신의 사랑은 무엇입니까</li>
+<li data-v-29962fe6 data-v-29962fe6>마음스파</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Music with 유튜브
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>피아노 중급 (3주)
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>소나티네 & 중급 - 피아노, 기타, 보컬, 기초 - 랩</li>
+<li data-v-29962fe6 data-v-29962fe6>연기 배우기 : cncschool.co.kr</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>피아노 고급 (3주)
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>명곡편 & 고급 - 피아노, 기타, 보컬, 심화 - 랩</li>
+<li data-v-29962fe6 data-v-29962fe6>마술 배우기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>개발
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>Server : 우버 이츠 클론코딩</li>
+<li data-v-29962fe6 data-v-29962fe6>Web
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>React - Next : 클론 코딩으로 시작하는 Next.js</li>
+<li data-v-29962fe6 data-v-29962fe6>Vue : Vue.js 입문</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>React Native : 리액트 네이티브 앱 프로그래밍</li>
+<li data-v-29962fe6 data-v-29962fe6>Project
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 먹지? 냉장고 레시피 : 자격증 - 요리
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>전문요리 - 푸드코디네이트
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>푸드코디네이터</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>요리수험서 - 조리사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>한식 조리기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>나라별요리 - 한국요리</li>
+<li data-v-29962fe6 data-v-29962fe6>전문요리 - 한국음식 _ 전통음식,김치</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>양식 조리기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>나라별요리 - 서양요리</li>
+<li data-v-29962fe6 data-v-29962fe6>전문요리 - 서양음식</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>일식 조리기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>나라별요리 - 일본요리</li>
+<li data-v-29962fe6 data-v-29962fe6>전문요리 - 일본음식</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>중식 조리기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>나라별요리 - 중국요리</li>
+<li data-v-29962fe6 data-v-29962fe6>전문요리 - 중국음식</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>베이킹/간식
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>요리수험서 - 제과제빵기사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>제빵 기능사</li>
+<li data-v-29962fe6 data-v-29962fe6>제과 기능사</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>쇼콜라티에</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>와인/커피/음료
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>커피
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>바리스타</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>칵테일
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>요리수험서 - 조주기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>바텐더</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>와인
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>소믈리에</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>오늘 뭐 입지? 기온별 옷차림
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>나는 세포마켓에서 답을 찾았다
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>맞춤 제작 리폼 or 코스프레 쇼핑몰
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>컬러리스트</li>
+<li data-v-29962fe6 data-v-29962fe6>패션스타일리스트</li>
+<li data-v-29962fe6 data-v-29962fe6>양장기능사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>도약아트 : 의류 제작</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>헤어</li>
+<li data-v-29962fe6 data-v-29962fe6>네일아트</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>천연 화장품 쇼핑몰
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>에스테틱</li>
+<li data-v-29962fe6 data-v-29962fe6>메이크업</li>
+<li data-v-29962fe6 data-v-29962fe6>맞춤형 화장품 조제관리사</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>Financial Planner
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>빅데이터 전문가 + 편입
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>취업/수험서 - 편입/독학사 - 대학편입</li>
+<li data-v-29962fe6 data-v-29962fe6>이것이 코딩 테스트다 with 파이썬</li>
+<li data-v-29962fe6 data-v-29962fe6>1년 안에 AI 빅데이터 전문가가 되는 법</li>
+<li data-v-29962fe6 data-v-29962fe6>1년 안에 AI 빅데이터 전문가가 되는 법 : 심화편</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>포도재무설계
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>경제/경영 - 재테크/금융
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>재테크</li>
+<li data-v-29962fe6 data-v-29962fe6>금융경제</li>
+<li data-v-29962fe6 data-v-29962fe6>보험</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>취업/수험서 - 경제/금융/회계자격증 - 자산관리사/재무위험관리사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>FP</li>
+<li data-v-29962fe6 data-v-29962fe6>AFPK</li>
+<li data-v-29962fe6 data-v-29962fe6>CFP</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>삼일회계법인
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>취업/수험서 - 전문직자격증
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>세무사</li>
+<li data-v-29962fe6 data-v-29962fe6>공인회계사</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-v-29962fe6 data-v-29962fe6>공인중개사
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>경제/경영 - 재테크/금융 - 부동산</li>
+<li data-v-29962fe6 data-v-29962fe6>취업/수험서 - 공인중개사/주택관리사 - 공인중개사</li>
+<li data-v-29962fe6 data-v-29962fe6>전원주택
+<ul data-v-29962fe6 data-v-29962fe6>
+<li data-v-29962fe6 data-v-29962fe6>부모님 캠핑카</li>
+<li data-v-29962fe6 data-v-29962fe6>취미/실용/스포츠 - 홈인테리어/수납 - 홈인테리어일반</li>
+<li data-v-29962fe6 data-v-29962fe6>구해줘 홈즈</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div> <footer data-v-29962fe6><a data-v-29962fe6></a> <a href="/1-project-220405-fridge-recipe" data-v-29962fe6>220405 개발 1일차 →</a></footer></section></main></div></div></div><script defer src="/_nuxt/static/1649105225/0-2022-today-i-learned/state.js"></script><script src="/_nuxt/0d858e3.js" defer></script><script src="/_nuxt/58ef95b.js" defer></script><script src="/_nuxt/960bec5.js" defer></script><script src="/_nuxt/b5af4e1.js" defer></script><script src="/_nuxt/0bac3da.js" defer></script>
+  </body>
+</html>
